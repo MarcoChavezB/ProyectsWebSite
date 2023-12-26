@@ -1,13 +1,18 @@
 <template>
-    <div class="navbar grid grid-cols-2">
+    <div class="navbar grid grid-cols-2 items-center">
         <div class="logo flex items-center gap-10">
-            <div class="img bg-red-400"><img src="https://th.bing.com/th/id/R.fd717fef3ec1752144ff1a9bbfff7247?rik=B%2b4nsHOuSFZUwQ&pid=ImgRaw&r=0" alt=""></div>
-            <div class="socials flex gap-5">
-                <div class="tite center sub-text">
-                    <p>Social networks:</p>
-                </div>
-                <div class="socials-ico">
-                    <socials />
+            <div class="img"><img src="https://th.bing.com/th/id/R.fd717fef3ec1752144ff1a9bbfff7247?rik=B%2b4nsHOuSFZUwQ&pid=ImgRaw&r=0" alt=""></div>
+            <div class="socials flex flex-col gap-5 h-full items-end">
+                <div class="text grid  h-full grid-rows-2">
+                    <div class="name">
+                        <h2 class="resaltado">Paulo Sergio Chavez Jasso</h2>
+                    </div>
+                    <div class="ocupation grid gap-10">
+                        <div class="oc">Ingeniero Civil</div>
+                        <div class="socials">
+                            <socials />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -28,12 +33,20 @@ import socials from '../icons/socials.vue';
 
 .img {
     width: 8rem;
-    height: 5rem;
+}
+.logo{
+    margin-left: 20px;
+}
+
+.sections{
+    margin-right: 20px;
 }
 .navbar{
     width: 100%;
 } 
+.ocupation{
+    grid-template-columns: 1fr 2fr;
+}
 </style>
 
 
-robloxisforyankis

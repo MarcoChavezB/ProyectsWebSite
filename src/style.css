@@ -7,7 +7,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  color-scheme: dark light;
   color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
@@ -82,8 +82,10 @@ button {
   padding: 2em;
 }
 
-#app {
-  margin: 20px;
+
+.resaltado{
+  color: white;
+  font-size: 1.5rem;
 }
 .sub-text{
   color: #949395;

@@ -1,6 +1,6 @@
 <template>
     <div class="contact gap-4">
-        <div class="ico center b">
+        <div class="ico">
             <span class="material-symbols-outlined">
                     call
             </span>
@@ -16,7 +16,6 @@
     </div>
 </template>
 <style scoped>
-
 .contact{
     display: grid;
     grid-template-columns: 0.3fr 1fr;
