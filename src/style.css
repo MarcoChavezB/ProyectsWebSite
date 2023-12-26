@@ -23,6 +23,10 @@
   font-size: 0.8rem;
   color: aliceblue;
 }
+.small-text{
+  font-size: 0.8rem;
+  color: aliceblue;
+}
 .center{
   display: flex;
   justify-content: center;
