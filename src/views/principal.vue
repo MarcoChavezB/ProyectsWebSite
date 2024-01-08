@@ -7,13 +7,15 @@
             <div class="back-image"></div>
             <div class="cont-image flex center">
                 <div class="title-cont grid">
-                    <div class="title grid grid-cols-2 ">
+                    <div class="title grid grid-cols-3 gap-4">
                         <div class="grid1">
-
                         </div>
-                        <div class="grid2 flex flex-col justify-center">
-                            <h1>Costos y Proyectos</h1>
-                            <h2>Ing. Paulo Sergio Chavez Jasso</h2>
+                        <div class="grid2 col-span-2 flex flex-col justify-center texto gap-10">
+                        <div class="flex gap-10 items-center">
+                            <img class="w-20 h-20 rounded-full" src="https://media.licdn.com/dms/image/D4E03AQEuX3jkSO1K4g/profile-displayphoto-shrink_800_800/0/1700948126550?e=1710374400&v=beta&t=Vbwe-G3DiP-H5JHs4oYqyc6VINZ1d-wmd48JRTkPuDA" alt="Rounded avatar">
+                        <h1 class="text-4xl font-bold">Costos y Proyectos</h1>
+                        </div>
+                        <h2 class="text-xl">Ing. Paulo Sergio Chavez Jasso</h2>
                         </div>
                     </div>
                     <div class="images">
@@ -41,17 +43,78 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="experiencia w-full">
+                <experiencia />
+            </div>
+
+            <div class="cards w-full">
+                <imagenes />         
+            </div>
+            
+            <div class="habilities w-full">
+                <habilities />
+            </div>
+
+            <div class="cardLeft w-full">
+                <cardLeft />
+            </div>
+
+            <div class="cardRight w-full">
+                <cardRight />
+            </div>
+
+            <div class="textArea w-full">
+                <textAreaSec />
+            </div>
+
+            <div class="history w-full">
+                <History />
+            </div>
+
         </div>
     </div>
 </template>
 
 <script setup>
+import History from '../components/secciones/history.vue';
+import textAreaSec from '../components/secciones/textArea.vue';
+import cardRight from '../components/secciones/cardRight.vue';
+import cardLeft from '../components/secciones/cardLeft.vue';
+import habilities from '../components/cards/habilidades.vue';
+import imagenes from '../components/secciones/imagenes.vue';
 import buttonOutline from '../components/controllers/buttonOutline.vue';
 import socialsVue from '../components/icons/socialOutline.vue';
 import navbarVue from '../components/principal/navbar.vue';
+import experiencia from '../components/secciones/experiencia.vue';
 </script>
 
 <style scoped>
+.habilities{
+    width: 100%;
+    height: 40vh;
+}
+
+
+.cardLeft{
+    width: 100%;
+    height: 70vh;
+}
+
+.history{
+    width: 100%;
+    height: 100vh;
+}
+.textArea{
+    width: 100%;
+    height: 20vh;
+    background-color: #202020;
+}
+
+.cardRight{
+    width: 100%;
+    height: 70vh;
+}
 .imagenes .img {
   width: 30%;
   height: 100%;
@@ -64,6 +127,10 @@ import navbarVue from '../components/principal/navbar.vue';
   height: 95%;
   object-fit: cover;
 }
+.texto h1{
+    font-size: 4rem;
+}
+
 .principal{
     grid-template-rows: auto 1fr;
     width: 100%;
@@ -73,7 +140,7 @@ import navbarVue from '../components/principal/navbar.vue';
     width: 100%;
     background-color: #111111;
     position: fixed;
-    z-index: 1;
+    z-index: 9999;
 }
 .cont-image{
     width: 100%;

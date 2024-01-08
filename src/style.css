@@ -23,6 +23,16 @@
   font-size: 0.8rem;
   color: aliceblue;
 }
+.yellow{
+  color: #dda348;
+}
+h2{
+  font-size: 2rem;
+}
+h3{
+  font-size: 1.5rem;
+}
+
 .small-text{
   font-size: 0.8rem;
   color: aliceblue;
